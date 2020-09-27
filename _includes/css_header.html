@@ -1,0 +1,39 @@
+{% if page.title == "Syntax" %}
+	{% assign synt = "active" %}
+{% endif %}
+
+{% if page.title == "selectors" %}
+	{% assign sec = "active" %}
+{% endif %}
+
+{% if page.title == "colors" %}
+	{% assign col = "active" %}
+{% endif %}
+
+{% if page.title == "backgrounds" %}
+	{% assign bgr = "active" %}
+{% endif %}
+
+{% if page.title == "margins" %}
+	{% assign mar = "active" %}
+{% endif %}
+
+{% if page.title == "sizes" %}
+	{% assign size = "active" %}
+{% endif %}
+
+{% if page.title == "texts" %}
+	{% assign text = "active" %}
+{% endif %}
+
+{% if page.title == "fonts" %}
+	{% assign font = "active" %}
+{% endif %}
+<li class={{synt}}><a href="../css/syntax.html">Syntax</a></li>
+<li class={{sec}}><a href="../css/selectors.html">Selectors</a></li>
+<li class="{{col}}"><a href="../css/colors.html">Colors</a></li>
+<li class="{{bgr}}"><a href="../css/backgrounds.html">Backgrounds</a></li>
+<li class="{{mar}}"><a href="../css/margins.html">Margins</a></li>
+<li class="{{size}}"><a href="../css/sizes.html">Sizes</a></li>
+<li class="{{text}}"><a href="../css/texts.html">Texts</a></li>
+<li class="{{font}}"><a href="../css/fonts.html">Fonts</a></li>

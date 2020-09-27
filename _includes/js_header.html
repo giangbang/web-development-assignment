@@ -1,0 +1,52 @@
+{% if page.title == "syntax" %}
+	{% assign syn = "active" %}
+{% endif %}
+
+{% if page.title == "variables" %}
+	{% assign var = "active" %}
+{% endif %}
+
+{% if page.title == "operators" %}
+	{% assign opt= "active" %}
+{% endif %}
+
+{% if page.title == "data types" %}
+	{% assign dat = "active" %}
+{% endif %}
+
+{% if page.title == "functions" %}
+	{% assign func = "active" %}
+{% endif %}
+
+{% if page.title == "objects" %}
+	{% assign obj = "active" %}
+{% endif %}
+
+{% if page.title == "events" %}
+	{% assign event = "active" %}
+{% endif %}
+
+{% if page.title == "conditions" %}
+	{% assign cond = "active" %}
+{% endif %}
+
+{% if page.title == "loops" %}
+	{% assign loop = "active" %}
+{% endif %} 
+
+{% if page.title == "regexp" %}
+	{% assign reg = "active" %}
+{% endif %}
+
+
+<li class="{{syn}}" name="Syntax"><a href="../js/syntax.html">Syntax</a></li>
+<li class="{{var}}" name="Variables"><a href="../js/variables.html">Variables</a></li>
+<li class="{{opt}}" name="Operators"><a href="../js/operators.html">Operators</a></li>
+<li name="Data types" class="{{dat}}"><a href="../js/data_types.html">Data types</a></li>
+<li class="{{func}}" name="Functions"><a href="../js/functions.html">Functions</a></li>
+<li name="Objects" class="{{obj}}"><a href="../js/objects.html">Objects</a></li>
+<li name="Events" class="{{event}}"><a href="../js/events.html">Events</a></li>
+<li name="Conditions" class="{{cond}}"><a href="../js/conditions.html">Conditions</a></li>
+<li name="Loops" class="{{loop}}"><a href="../js/loops.html">Loops</a></li>
+<li name="RegExp" class="{{reg}}"><a href="../js/regexp.html">RegExp</a></li>
+

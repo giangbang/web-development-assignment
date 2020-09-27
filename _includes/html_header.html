@@ -1,0 +1,39 @@
+{% if page.title == "headings" %}
+	{% assign head = "active" %}
+{% endif %}
+
+{% if page.title == "paragraphs" %}
+	{% assign para = "active" %}
+{% endif %}
+
+{% if page.title == "links" %}
+	{% assign links = "active" %}
+{% endif %}
+
+{% if page.title == "images" %}
+	{% assign img = "active" %}
+{% endif %}
+
+{% if page.title == "lists" %}
+	{% assign list = "active" %}
+{% endif %}
+
+{% if page.title == "tables" %}
+	{% assign tab = "active" %}
+{% endif %}
+
+{% if page.title == "forms" %}
+	{% assign form = "active" %}
+{% endif %}
+
+
+<li class="{{head}}" name="Headings"><a href="../html/headings.html">Headings</a></li>
+<li class="{{para}}" name="Paragraphs"><a href="../html/paragraphs.html">Paragraphs</a></li>
+<li class="{{links}}" name="Links"><a href="../html/links.html">Links</a></li>
+<li name="Images" class="{{img}}"><a href="../html/images.html">Images</a></li>
+<li class="{{list}}" name="Lists"><a href="../html/lists.html">Lists</a></li>
+<li name="Tables" class="{{tab}}"><a href="../html/tables.html">Tables</a></li>
+<li name="Forms" class="{{form}}"><a href="../html/forms.html">Forms</a></li>
+
+
+
